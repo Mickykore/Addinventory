@@ -1,0 +1,63 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "apexcharts": "^3.47.0",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.2",
+    "chart.js": "^4.4.2",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "date-fns": "^3.6.0",
+    "ethiopian-calendar-date-converter": "^2.1.4",
+    "ethiopian-date-converter": "^1.0.6",
+    "ethiopic-js": "^1.2.5",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-bootstrap": "^2.10.2",
+    "react-calendar": "^5.0.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-confirm-alert": "^3.0.6",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-redux": "^9.0.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "^5.0.1",
+    "react-table": "^7.8.0",
+    "react-to-print": "^2.15.1",
+    "react-toastify": "^10.0.4",
+    "reactstrap": "^9.2.2",
+    "sass": "^1.72.0",
+    "web-vitals": "^3.5.2",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

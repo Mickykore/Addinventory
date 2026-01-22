@@ -1,0 +1,142 @@
+/* styles.module.css */
+
+:global(html, body) {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: auto;
+  color: #000;
+  font-size: 15px;
+
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  margin: 10px;
+  padding: auto;
+  font-size: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.5rem!important;
+}
+
+.mb-4 {
+  margin-bottom: 0.0rem!important;
+}
+
+.alert {
+  padding: 0rem 0rem!important;
+  margin-bottom: 0.0rem!important;
+}
+
+/* These styles are already scoped by default in CSS modules */
+.button {
+  width: 50%;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #3a285a;
+}
+
+.button:active {
+  background-color: #ccc;
+  color: #000;
+}
+
+.form-control {
+  font-size: 20px;
+}
+
+.floatingInput {
+  padding: 0px;
+}
+
+.form-floating>label {
+  height: 70%;
+  padding: 0.5rem 0.75rem;
+}
+
+.form-floating {
+  margin: 10px;
+}
+
+section {
+  height: 77vh;
+}
+
+.form-check .form-check-input {
+  float: left;
+  margin-left: 1.5em;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #459d86;
+  /* border-color: #0d6efd; */
+  margin: 10px;
+  padding: auto;
+  font-size: 1.5rem;
+}
+
+.links {
+  color: rgb(125, 30, 235);
+  margin: 10px;
+  padding: auto;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+}

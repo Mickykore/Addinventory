@@ -1,0 +1,42 @@
+[
+ {
+  "name": "eliteBook",
+  "category": "laptop",
+  "brand": "hp",
+  "purchasedPrice": 22000,
+  "minSellingPrice": 26400,
+  "maxSellingPrice": 28600,
+  "description": "good pc",
+  "quantity": 2
+ },
+ {
+  "name": "proobook",
+  "category": "laptop",
+  "brand": "hp",
+  "purchasedPrice": 27000,
+  "minSellingPrice": 32400,
+  "maxSellingPrice": 35100,
+  "description": "good pc",
+  "quantity": 4
+ },
+ {
+  "name": "pavilion",
+  "category": "laptop",
+  "brand": "hp",
+  "purchasedPrice": 34000,
+  "minSellingPrice": 40800,
+  "maxSellingPrice": 44200,
+  "description": "good pc",
+  "quantity": 3
+ },
+ {
+  "name": "nitro 5",
+  "category": "laptop",
+  "brand": "hp",
+  "purchasedPrice": 51000,
+  "minSellingPrice": 61200,
+  "maxSellingPrice": 66300,
+  "description": "good pc",
+  "quantity": 5
+ }
+]

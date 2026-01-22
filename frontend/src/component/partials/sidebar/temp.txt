@@ -1,0 +1,124 @@
+        // import { NavLink } from 'react-router-dom';
+// import { MdDashboard, MdOutlineProductionQuantityLimits, MdFormatListBulletedAdd } from "react-icons/md";
+// import { ImProfile } from "react-icons/im";
+// import { GiSellCard } from "react-icons/gi";
+        {/* <ul className="nav flex-column">
+          <li className="nav-item">
+          
+            <NavLink className={`nav-link ${currentPageName === 'dashboard' ? 'active' : ''}`} aria-current="page" to="/">
+              <MdDashboard size={23} /> Dashboard
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className={`nav-link ${currentPageName === 'contract' ? 'active' : ''}`} to="/Products">
+              <span data-feather="file"></span>
+              <MdOutlineProductionQuantityLimits size={23} />Products
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className={`nav-link ${currentPageName === 'Material Inventory' ? 'active' : ''}`} to="/Sales">
+              <span data-feather="shopping-cart"></span>
+              <GiSellCard size={23}/>Sales
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className={`nav-link ${currentPageName === 'Used Materials' ? 'active' : ''}`} to="/Orders">
+              <span data-feather="shopping-cart"></span>
+              <MdFormatListBulletedAdd size={23} />Orders
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className={`nav-link`} to="/profile">
+              <span data-feather="users"></span>
+              <ImProfile size={23}/>Profile
+            </NavLink>
+          </li>
+        </ul>
+        <br /> */}
+
+
+ <nav id="sidebarMenu" className=" d-md-block  sidebar collapse " 
+        style={{width: isOpen ? "230px" : "60px"}} isOpen={isOpen}>
+          <div className=" top_section text-white  justify-content-md-between" >
+            <Link to="/"><img src={jokalogo} alt="jokalogo" width={100} height={90} style={{paddingLeft: "10px", display: isOpen ? "block" : "none"}}/></Link>
+          {/* <h3 style={{paddingLeft: "10px", display: isOpen ? "block" : "none"}}>Joka Trading</h3> */}
+          <div style={{paddingRight: "10px", marginLeft: isOpen ? "10px" : "0px"}} className='bars'>
+          <HiMenuAlt3 onClick={toggle} size={23} style={{cursor: "pointer"}}/>
+          </div>
+          </div>
+          <div className="position-sticky pt-3">
+            <ul className="nav flex-column">
+              <li className="nav-item">
+              
+                <NavLink className={`nav-link`}to="/Dashboard">
+                  <MdDashboard size={23} /> Dashboard
+                </NavLink>
+              </li>
+              <li className="nav-item">
+              
+                <NavLink className={`nav-link `} to="/Category">
+                  <MdCategory size={23} /> Category
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={`nav-link`} to="/Products">
+                  <span data-feather="file"></span>
+                  <MdOutlineProductionQuantityLimits size={23} /> Products
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={`nav-link `} to="/Sales">
+                  <span data-feather="shopping-cart"></span>
+                  <GiSellCard size={23}/> Sales
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={`nav-link `} to="/Orders">
+                  <span data-feather="shopping-cart"></span>
+                  <MdFormatListBulletedAdd size={23} /> Orders
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className={`nav-link`} to="/profile">
+                  <span data-feather="users"></span>
+                  <ImProfile size={23}/> Profile
+                </NavLink>
+              </li>
+            </ul>
+            <br />
+          </div>
+    </nav> 
+
+    <table {...getTableProps()} className="table table-striped table-hover caption-top">
+        <caption>List of Categories</caption>
+          <thead>
+            {
+              headerGroups.map(headerGroup => (
+                <tr {...headerGroup.getHeaderGroupProps()}>
+                  {
+                    headerGroup.headers.map(column => (
+                      <th {...column.getHeaderProps()} scope="col">{column.render('Header')}</th>
+                    ))
+                  }
+                </tr>
+              ))
+            }
+          </thead>
+          <tbody {...getTableBodyProps()}>
+            {
+              rows.map(row => {
+                prepareRow(row)
+                return (
+                  <tr {...row.getRowProps()}>
+                    {
+                      row.cells.map(cell => {
+                        const { _id, name} = getTableBodyProps;
+                        return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                      })
+                    }
+                  </tr>
+                )
+              })
+            }
+          </tbody>
+        </table>
