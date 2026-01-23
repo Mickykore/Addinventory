@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../../partials/header/headers.css'
-import jokalogo from "../../partials/sidebar/jokalogo4.png"
+import jokalogo from "../../partials/sidebar/add title bar4.png"
 import { ShowOnLogout, ShowOnLogin } from '../../protect/HideElement'
 
 

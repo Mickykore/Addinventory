@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import styles from './invoiceStyle.module.scss';
-import jokalogo from "../../partials/sidebar/jokalogo3.png";
+import jokalogo from "../../partials/sidebar/add title bar4.png";
 
 export const Invoice = ({ AddedSales }) => {
   // Use useRef to reference the address element for editing

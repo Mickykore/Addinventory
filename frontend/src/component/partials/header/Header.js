@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { selectName } from '../../../redux/features/auth/authSlice';
 import { HiMenuAlt3 } from "react-icons/hi";
 import {IoClose } from "react-icons/io5"
-import jokalogo from "../sidebar/ydlogo-removebg.png"
+import jokalogo from "../sidebar/add title bar4.png"
 import menu from '../sidebar/menu';
 import SidebarItems  from '../sidebar/SidebarItems';
 
