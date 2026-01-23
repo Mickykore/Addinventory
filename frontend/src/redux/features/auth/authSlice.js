@@ -32,6 +32,7 @@ const authSlice = createSlice({
       state.firstname = action.payload
     },
     SET_USER: (state, action) => {
+      console.log("payload", action.payload);
       const { firstname, fathername, email, photo, userType, phone} = action.payload;
       localStorage.setItem("userType", JSON.stringify(userType))
       console.log("fiuuu", action.payload)
