@@ -10,7 +10,6 @@ import { useTable, usePagination, useGlobalFilter, useFilters } from 'react-tabl
 import BulkProductForm from './bulkProduct';
 import { GlobalFilter } from '../globalFilter';
 import { useRedirectLogOutUser } from "../../customHook/useRedirectLogOutUser"
-import { useRedirectEmployee } from "../../customHook/useRedirectEmploye"
 import { Link } from 'react-router-dom';
 import { MdEditSquare, MdDeleteForever } from 'react-icons/md';
 import { confirmAlert } from 'react-confirm-alert';
@@ -46,8 +45,7 @@ const initialState = {
 }
 
 export const Products = () => {
-  useRedirectLogOutUser();
-  useRedirectEmployee();
+  useRedirectLogOutUser()
 
   const dispatch = useDispatch();
   // const navigate = Navigate();
