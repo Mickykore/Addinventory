@@ -39,6 +39,7 @@ const authSlice = createSlice({
       state.user = { firstname, fathername ,email, photo, phone, userType };
     },
     SET_USERS: (state, action) => {
+      console.log("all users", action.payload);
       state.users = action.payload
     },
     SET_USER_TYPE: (state, action) => {
