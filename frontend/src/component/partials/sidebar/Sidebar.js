@@ -5,7 +5,7 @@ import { GiSellCard } from "react-icons/gi";
 import { HiMenuAlt3 } from "react-icons/hi";
 import "./Sidebar.scss"
 import { useState, useEffect } from 'react';
-import ydlogo from "./add title bar4.png"
+import ydlogo from "./ydlogo-removebg.png"
 import menu from './menu';
 import SidebarItems  from './SidebarItems';
 

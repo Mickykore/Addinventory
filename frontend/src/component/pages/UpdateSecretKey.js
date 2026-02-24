@@ -70,15 +70,17 @@ export const UpdatedSecretKey = () => {
         <form onSubmit={(e) => update(e, 'admin')} >
           <h1 className="h3 mb-3 fw-normal">Update Admin Secret Key</h1>
           {/* Admin form inputs */}
-          <div style={{margin: "5px"}}>
-                  <label htmlFor="minSellingPrice" className="form-label">Admin Secret Key</label>
-            <input type="password" className="form-control" id="adminSecretKey" placeholder="Add NewAdmin Secret Key" name="adminSecretKey" value={adminForm.adminSecretKey} onChange={handleAdminInputChange} />
+          <div className="form-floating">
+            <input type="password" className="form-control" id="adminSecretKey" placeholder="Admin Secret Key" name="adminSecretKey" value={adminForm.adminSecretKey} onChange={handleAdminInputChange} />
+            <label htmlFor="adminSecretKey">Admin Secret Key</label>
           </div>
-          <div style={{margin: "5px"}}>
+          <div className="form-floating">
             <input type="password" className="form-control" id="adminConfirmSecretKey" placeholder="Confirm Admin Secret Key" name="adminConfirmSecretKey" value={adminForm.adminConfirmSecretKey} onChange={handleAdminInputChange} />
+            <label htmlFor="adminConfirmSecretKey">Confirm Admin Secret Key</label>
           </div>
-          <div style={{margin: "5px"}}>
+          <div className="form-floating">
             <input type="password" className="form-control" id="adminPassword" placeholder="Password" name="adminPassword" value={adminForm.adminPassword} onChange={handleAdminInputChange} />
+            <label htmlFor="adminPassword">Password</label>
           </div>
           {/* Admin form button with loading state */}
           {isLoadingAdmin ? (
@@ -92,14 +94,17 @@ export const UpdatedSecretKey = () => {
         <form onSubmit={(e) => update(e, 'employee')}>
           <h1 className="h3 mb-3 fw-normal">Update Employee Secret Key</h1>
           {/* Employee form inputs */}
-          <div style={{margin: "5px"}}>
+          <div className="form-floating">
             <input type="password" className="form-control" id="employeeSecretKey" placeholder="Employee Secret Key" name="employeeSecretKey" value={employeeForm.employeeSecretKey} onChange={handleEmployeeInputChange} />
+            <label htmlFor="employeeSecretKey">Employee Secret Key</label>
           </div>
-          <div style={{margin: "5px"}}>
+          <div className="form-floating">
             <input type="password" className="form-control" id="employeeConfirmSecretKey" placeholder="Confirm Employee Secret Key" name="employeeConfirmSecretKey" value={employeeForm.employeeConfirmSecretKey} onChange={handleEmployeeInputChange} />
+            <label htmlFor="employeeConfirmSecretKey">Confirm Employee Secret Key</label>
           </div>
-          <div style={{margin: "5px"}}>
+          <div className="form-floating">
             <input type="password" className="form-control" id="employeePassword" placeholder="Password" name="employeePassword" value={employeeForm.employeePassword} onChange={handleEmployeeInputChange} />
+            <label htmlFor="employeePassword">Password</label>
           </div>
           {/* Employee form button with loading state */}
           {isLoadingEmployee ? (

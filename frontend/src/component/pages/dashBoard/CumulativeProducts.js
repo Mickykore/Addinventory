@@ -86,22 +86,22 @@ export const CumulativeProducts = () => {
           Filter: SelectColumnFilter,
           filter: 'multiSelectFilter'
         },
-        // {
-        //   Header: 'Purchased Price',
-        //   accessor: 'purchasedPrice',
-        //   disableFilters: true
-        // },
+        {
+          Header: 'Purchased Price',
+          accessor: 'purchasedPrice',
+          disableFilters: true
+        },
         {
           Header: 'Quantity',
           accessor: 'quantity',
           Filter: SelectColumnFilter,
           filter: 'multiSelectFilter',
         },
-        // {
-        //   Header: 'Total purchased Price',
-        //   accessor: row => row.purchasedPrice * row.quantity,
-        //   disableFilters: true
-        // },
+        {
+          Header: 'Total purchased Price',
+          accessor: row => row.purchasedPrice * row.quantity,
+          disableFilters: true
+        },
         {
           Header: 'Minimum Selling Price',
           accessor: 'sellingPriceRange.minSellingPrice',
@@ -161,19 +161,19 @@ export const CumulativeProducts = () => {
         });
       }
 
-        const fullColumns = isAdmin ? 
-        [ ...baseColumns.slice(0, 3), {
-          Header: 'Purchased Price',
-          accessor: 'purchasedPrice',
-          disableFilters: true
-        },
-         ...baseColumns.slice(3, 4), 
-        ,
-        {
-          Header: 'Total purchased Price',
-          accessor: row => row.purchasedPrice * row.quantity,
-        }, ...baseColumns.slice(4)] : baseColumns;
-      return fullColumns;
+      //   const fullColumns = isAdmin ? 
+      //   [ ...baseColumns.slice(0, 3), {
+      //     Header: 'Purchased Price',
+      //     accessor: 'purchasedPrice',
+      //     disableFilters: true
+      //   },
+      //    ...baseColumns.slice(3, 4), 
+      //   ,
+      //   {
+      //     Header: 'Total purchased Price',
+      //     accessor: row => row.purchasedPrice * row.quantity,
+      //   }, ...baseColumns.slice(4)] : baseColumns;
+      // return fullColumns;
       return baseColumns;
 
 }, [printView]);

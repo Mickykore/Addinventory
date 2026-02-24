@@ -142,7 +142,6 @@ export const getAllUsersData = async () => {
         return response.data;
     } catch (error) {
         const message = (
-            console.log(error),
             error.response && error.response.data &&
             error.response.data.message
 
